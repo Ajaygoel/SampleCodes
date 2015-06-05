@@ -1,0 +1,21 @@
+﻿@{
+    PageData["title"] = "Cargoclix | Sign In";
+}
+<div class="row">
+    <form class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4" ng-submit="login(mobileNumber)">
+        <h2 class="text-center">Cargoclix.com</h2>
+        <h2 class="text-center">Cargoclix Slot Mobile App</h2>
+        <div class="form-box">
+            <div class="form-group">
+                <input ng-model="mobileNumber" type="text" class="form-control" placeholder="Mobile Number" required autofocus />
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit" ng-disabled="!mobileNumber" disabled>Login with Telephone Number</button>
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit" ng-disabled="true" disabled>Login with Own Account</button>
+            </div>
+        </div>
+    </form>
+</div>

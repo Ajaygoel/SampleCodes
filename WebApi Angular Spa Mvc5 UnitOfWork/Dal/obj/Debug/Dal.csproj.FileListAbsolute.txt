@@ -1,0 +1,10 @@
+F:\Code\DemoCargoClix\Dal\bin\Debug\Dal.dll
+F:\Code\DemoCargoClix\Dal\bin\Debug\Dal.pdb
+F:\Code\DemoCargoClix\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+F:\Code\DemoCargoClix\Dal\obj\Debug\Dal.dll
+F:\Code\DemoCargoClix\Dal\obj\Debug\Dal.pdb
+F:\Code\DemoCargoClix\Dal\bin\Debug\Dal.dll.config
+F:\Code\DemoCargoClix\Dal\bin\Debug\EntityFramework.dll
+F:\Code\DemoCargoClix\Dal\bin\Debug\EntityFramework.SqlServer.dll
+F:\Code\DemoCargoClix\Dal\bin\Debug\EntityFramework.xml
+F:\Code\DemoCargoClix\Dal\bin\Debug\EntityFramework.SqlServer.xml

@@ -1,0 +1,54 @@
+﻿
+
+<link type="text/css" href="https://github.com/jdewit/bootstrap-timepicker/blob/gh-pages/css/bootstrap-timepicker.css" />
+
+<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+    <form ng-submit="ReportDelay()">
+        <div class="row">
+            <div class="row">
+                <h3>Report a Delay</h3>
+            </div>
+            <div class="row">
+                <h4>{{ $root.BookingDetail.Time }}    {{ $root.BookingDetail.Place}}</h4>
+            </div>
+            <div class="row">
+                <h4>Please enter the new ETA</h4>
+            </div>
+            <div class="row">
+                <input type="text" ng-model="NewEta" class="input-sm" id="NewEta" />
+            </div>
+            <div class="row">
+                <h4>Reason for Delay</h4>
+            </div>
+            <div class="row">
+                <input type='radio' name='reason' ng-model="ReasonForDelay" value='Trafic Jam'>Trafic Jam
+            </div>
+            <div class="row">
+                <input type='radio' name='reason' ng-model="ReasonForDelay" value='Break Down'>Break Down
+            </div>
+            <div class="row">
+                <input type='radio' name='reason' ng-model="ReasonForDelay" value='Accident'>Accident
+            </div>
+            <div class="row">
+                <input type='radio' name='reason' ng-model="ReasonForDelay" value='Free Text'>Free Text
+            </div>
+            <div class="row">
+                <textarea rows="4" cols="50" ng-model="FreeText" placeholder="Free Text..."></textarea>
+            </div>
+            <div class="row">
+                <br />
+                <button class="btn btn-primary btn-block" type="submit">Enter</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+@*@section scripts
+{
+    <script type="text/javascript" src="https://github.com/jdewit/bootstrap-timepicker/blob/gh-pages/js/bootstrap-timepicker.js"></script>
+
+    <script type="text/javascript">
+        $('#NewEta').timepicker();
+    </script>
+}*@
