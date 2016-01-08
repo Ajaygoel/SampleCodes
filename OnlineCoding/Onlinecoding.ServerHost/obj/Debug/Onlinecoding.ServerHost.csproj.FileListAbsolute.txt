@@ -1,0 +1,8 @@
+D:\OnlineCoding\Onlinecoding.ServerHost\bin\Debug\Onlinecoding.ServerHost.exe.config
+D:\OnlineCoding\Onlinecoding.ServerHost\bin\Debug\Onlinecoding.ServerHost.exe
+D:\OnlineCoding\Onlinecoding.ServerHost\bin\Debug\Onlinecoding.ServerHost.pdb
+D:\OnlineCoding\Onlinecoding.ServerHost\bin\Debug\OnlineCoding.Server.dll
+D:\OnlineCoding\Onlinecoding.ServerHost\bin\Debug\OnlineCoding.Server.pdb
+D:\OnlineCoding\Onlinecoding.ServerHost\obj\Debug\Onlinecoding.ServerHost.csprojResolveAssemblyReference.cache
+D:\OnlineCoding\Onlinecoding.ServerHost\obj\Debug\Onlinecoding.ServerHost.exe
+D:\OnlineCoding\Onlinecoding.ServerHost\obj\Debug\Onlinecoding.ServerHost.pdb

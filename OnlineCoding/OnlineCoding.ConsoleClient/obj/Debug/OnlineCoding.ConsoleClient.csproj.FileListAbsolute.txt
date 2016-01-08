@@ -1,0 +1,6 @@
+D:\OnlineCoding\OnlineCoding.ConsoleClient\bin\Debug\OnlineCoding.ConsoleClient.exe.config
+D:\OnlineCoding\OnlineCoding.ConsoleClient\obj\Debug\OnlineCoding.ConsoleClient.csprojResolveAssemblyReference.cache
+D:\OnlineCoding\OnlineCoding.ConsoleClient\bin\Debug\OnlineCoding.ConsoleClient.exe
+D:\OnlineCoding\OnlineCoding.ConsoleClient\bin\Debug\OnlineCoding.ConsoleClient.pdb
+D:\OnlineCoding\OnlineCoding.ConsoleClient\obj\Debug\OnlineCoding.ConsoleClient.exe
+D:\OnlineCoding\OnlineCoding.ConsoleClient\obj\Debug\OnlineCoding.ConsoleClient.pdb

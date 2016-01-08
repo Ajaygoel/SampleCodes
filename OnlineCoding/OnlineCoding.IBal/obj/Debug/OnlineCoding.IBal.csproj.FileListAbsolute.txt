@@ -1,0 +1,7 @@
+D:\OnlineCoding\OnlineCoding.IBal\bin\Debug\OnlineCoding.IBal.dll
+D:\OnlineCoding\OnlineCoding.IBal\bin\Debug\OnlineCoding.IBal.pdb
+D:\OnlineCoding\OnlineCoding.IBal\obj\Debug\OnlineCoding.IBal.dll
+D:\OnlineCoding\OnlineCoding.IBal\obj\Debug\OnlineCoding.IBal.pdb
+D:\OnlineCoding\OnlineCoding.IBal\bin\Debug\OnlineCoding.Domain.dll
+D:\OnlineCoding\OnlineCoding.IBal\bin\Debug\OnlineCoding.Domain.pdb
+D:\OnlineCoding\OnlineCoding.IBal\obj\Debug\OnlineCoding.IBal.csprojResolveAssemblyReference.cache

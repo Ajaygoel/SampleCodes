@@ -1,0 +1,12 @@
+D:\OnlineCoding\OnlineCoding.IDal\bin\Debug\OnlineCoding.IDal.dll.config
+D:\OnlineCoding\OnlineCoding.IDal\bin\Debug\OnlineCoding.IDal.dll
+D:\OnlineCoding\OnlineCoding.IDal\bin\Debug\OnlineCoding.IDal.pdb
+D:\OnlineCoding\OnlineCoding.IDal\bin\Debug\EntityFramework.dll
+D:\OnlineCoding\OnlineCoding.IDal\bin\Debug\EntityFramework.SqlServer.dll
+D:\OnlineCoding\OnlineCoding.IDal\bin\Debug\OnlineCoding.Domain.dll
+D:\OnlineCoding\OnlineCoding.IDal\bin\Debug\OnlineCoding.Domain.pdb
+D:\OnlineCoding\OnlineCoding.IDal\bin\Debug\EntityFramework.xml
+D:\OnlineCoding\OnlineCoding.IDal\bin\Debug\EntityFramework.SqlServer.xml
+D:\OnlineCoding\OnlineCoding.IDal\obj\Debug\OnlineCoding.IDal.csprojResolveAssemblyReference.cache
+D:\OnlineCoding\OnlineCoding.IDal\obj\Debug\OnlineCoding.IDal.dll
+D:\OnlineCoding\OnlineCoding.IDal\obj\Debug\OnlineCoding.IDal.pdb

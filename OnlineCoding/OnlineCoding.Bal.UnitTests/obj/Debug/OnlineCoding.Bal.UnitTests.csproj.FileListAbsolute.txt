@@ -1,0 +1,7 @@
+D:\OnlineCoding\OnlineCoding.Bal.UnitTests\bin\Debug\OnlineCoding.Bal.UnitTests.dll
+D:\OnlineCoding\OnlineCoding.Bal.UnitTests\bin\Debug\OnlineCoding.Bal.UnitTests.pdb
+D:\OnlineCoding\OnlineCoding.Bal.UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\OnlineCoding\OnlineCoding.Bal.UnitTests\bin\Debug\Moq.dll
+D:\OnlineCoding\OnlineCoding.Bal.UnitTests\bin\Debug\Moq.xml
+D:\OnlineCoding\OnlineCoding.Bal.UnitTests\obj\Debug\OnlineCoding.Bal.UnitTests.dll
+D:\OnlineCoding\OnlineCoding.Bal.UnitTests\obj\Debug\OnlineCoding.Bal.UnitTests.pdb
