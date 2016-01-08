@@ -1,0 +1,8 @@
+D:\AvnonDemo\AvnonDemo\Code\AvnonDemo.DataAccess\bin\Debug\AvnonDemo.DataAccess.dll.config
+D:\AvnonDemo\AvnonDemo\Code\AvnonDemo.DataAccess\bin\Debug\AvnonDemo.DataAccess.dll
+D:\AvnonDemo\AvnonDemo\Code\AvnonDemo.DataAccess\bin\Debug\AvnonDemo.DataAccess.pdb
+D:\AvnonDemo\AvnonDemo\Code\AvnonDemo.DataAccess\bin\Debug\AvnonDemo.Domain.dll
+D:\AvnonDemo\AvnonDemo\Code\AvnonDemo.DataAccess\bin\Debug\AvnonDemo.Domain.pdb
+D:\AvnonDemo\AvnonDemo\Code\AvnonDemo.DataAccess\obj\Debug\AvnonDemo.DataAccess.csprojResolveAssemblyReference.cache
+D:\AvnonDemo\AvnonDemo\Code\AvnonDemo.DataAccess\obj\Debug\AvnonDemo.DataAccess.dll
+D:\AvnonDemo\AvnonDemo\Code\AvnonDemo.DataAccess\obj\Debug\AvnonDemo.DataAccess.pdb

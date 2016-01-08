@@ -1,0 +1,47 @@
+﻿<div>
+    <div class="text-right" data-ng-hide='view==="edit" || view==="delete"'>
+        <button title='click to update this item' data-ng-show='editable' data-ng-click='editItem()'
+                class="btn btn-default btn-xs">
+            <i class="fa fa-edit"></i>&nbsp; Edit
+        </button>
+
+        <button title='click to delete this item' data-ng-show='deletable' data-ng-click='view="delete"'
+                class="btn btn-default btn-xs">
+            <i class="fa fa-trash-o"></i>&nbsp; Delete
+        </button>
+    </div>
+    <div class="text-right" data-ng-show='view==="edit" && !saving'>
+        <button title='click to update this item' data-ng-click='saveItem()'
+                class="btn btn-success btn-xs">
+            <i class="fa fa-save"></i>&nbsp; Save
+        </button>
+
+        <button title='click to cancel' data-ng-click='cancelItem()'
+                class="btn btn-default btn-xs">
+            <i class=""></i>&nbsp; Cancel
+        </button>
+    </div>
+    <div class="text-right" data-ng-show='view==="edit" && saving'>
+        <button title='saving...' data-ng-disabled="true"
+                class="btn btn-success btn-xs">
+            <i class="fa fa-save fa-spin"></i>&nbsp; Saving...
+        </button>
+    </div>
+    <div class="text-right" data-ng-show='view==="delete" && !deleting'>
+        <button title='click to delete this item' data-ng-show='deletable' data-ng-click='removeItem()'
+                class="btn btn-danger btn-xs">
+            <i class="fa fa-trash-o"></i>&nbsp; DELETE
+        </button>
+
+        <button title='click to cancel' data-ng-click='cancelItem()'
+                class="btn btn-default btn-xs">
+            <i class=""></i>&nbsp; Cancel
+        </button>
+    </div>
+    <div class="text-right" data-ng-show='view==="delete" && deleting'>
+        <button title='click to delete this item' data-ng-show='deletable' data-ng-disabled="true"
+                class="btn btn-danger btn-xs">
+            <i class="fa fa-trash-o fa-spin"></i>&nbsp; DELETING...
+        </button>
+    </div>
+</div>

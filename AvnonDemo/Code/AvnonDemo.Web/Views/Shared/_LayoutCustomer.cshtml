@@ -1,0 +1,131 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>AVNON Chat Application</title>
+    <!-- Bootstrap core CSS -->
+    <!-- Custom styles for this template -->
+    <link href="~/CustomerAssets/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/CustomerAssets/css/animate.css" rel="stylesheet" />
+    <link href="~/CustomerAssets/css/style.css" rel="stylesheet" />
+    <link href="~/CustomerAssets/css/responsive.css" rel="stylesheet" />
+    <link href="~/Assets/file-uploader/css/jquery.fileupload.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-sanitize.js"></script>
+    <script src=" http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+    <script src="~/Assets/js/ui-bootstrap.min.js"></script>
+    <script src="~/Assets/js/ui-bootstrap-tpls.min.js"></script>
+    <script src="~/Assets/js/main.js"></script>
+    @Scripts.Render("~/bundles/customerappjs")
+    @Scripts.Render("~/bundles/teckedgejs")
+    <style>
+        .no-padding {
+            padding: 0px !important;
+        }
+
+        .header {
+            padding: 10px;
+            background-color: #428bca;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        body {
+            background-color: #f8f8f8;
+        }
+
+        .chat-box {
+            padding: 10px;
+            border: 1px solid #ddd;
+            height: 560px;
+            position: relative;
+        }
+
+        .error-text {
+            color: red;
+            font-size: 13px;
+        }
+
+        .panel-body {
+            padding: 0px !important;
+        }
+
+        .chat {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+        }
+
+        .panel-body {
+            overflow-y: auto;
+            height: 480px;
+        }
+
+        .border-radius-none {
+            border-radius: 0px !important;
+        }
+
+        .image-container {
+            margin-top: 10px;
+        }
+
+        .custom-image {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .custom-preview {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 5px;
+        }
+
+        .image-review {
+            margin-top: 5px;
+        }
+
+        .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .edit {
+            position: absolute;
+            right: 28px;
+            top: 10px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+<body ng-app="MAdmin" ng-controller="AppController">
+    <div class="container-fluid no-padding">
+
+        <div class="header text-center">
+            Welcome To Chat Application
+
+        </div>
+        <div ng-view>
+            @RenderBody()
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="~/CustomerAssets/js/jquery.js"></script>
+    <script src="~/CustomerAssets/js/bootstrap.js"></script>
+    <script src="~/CustomerAssets/js/gmap3.js"></script>
+    <script src="~/Scripts/kendo.all.min.js"></script>
+    <script src="~/CustomerAssets/js/underscore.js"></script>
+    <script src="~/Assets/file-uploader/js/vendor/jquery.ui.widget.js"></script>
+    <script src="~/Assets/file-uploader/js/jquery.iframe-transport.js"></script>
+    <script src="~/Assets/file-uploader/js/jquery.fileupload.js"></script>
+</body>
+</html>   

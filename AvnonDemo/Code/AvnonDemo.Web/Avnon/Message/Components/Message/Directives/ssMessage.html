@@ -1,0 +1,56 @@
+﻿<div class="col-md-8 col-md-offset-2">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            Chat
+        </div>
+        <div class="panel-body">
+            <a class="list-group-item" data-ng-if="loading">
+                Please wait we are loading..
+            </a>
+            <div class="chat" data-ng-repeat="message in messageList">
+                <span data-ng-show="message._view=='detail'">{{message.text}}</span>
+                <input type="text" class="form-control border-radius-none input-sm" style="width:80%;" data-ng-show="message._view=='edit'" data-ng-model="message.text" placeholder="Type Message Here" />
+                <div class="image-container" data-ng-repeat="image in message.images">
+                    <img data-ng-src="{{image.url}}" class="image-responsive custom-image" />
+                </div>
+                <div class="close" data-ng-click="deleteMessage(message)" data-ng-show="message._view=='detail'">
+                    <i class="glyphicon glyphicon-remove"></i>
+                </div>
+                <div class="edit" data-ng-click="editMessage(message)" data-ng-show="message._view=='detail'">
+                    <i class="glyphicon glyphicon-edit"></i>
+                </div>
+                <div class="edit" data-ng-click="okUpdateMessage(message)" data-ng-show="message._view=='edit'">
+                    <i class="glyphicon glyphicon-ok-sign"></i>
+                </div>
+                <div class="close" data-ng-click="cancelUpdateMessage(message)" data-ng-show="message._view=='edit'">
+                    <i class="glyphicon glyphicon-remove-sign"></i>
+                </div>
+            </div>
+            <div data-ng-if="messageList.length==0 && !loading">
+                No Message
+            </div>
+        </div>
+        <div class="panel-footer">
+            <form name="chatForm">
+                <div class="input-group">
+                    <input id="fileupload1" type="file" class="hide" name="files" multiple="multiple">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default btn-sm border-radius-none" id="btn-chat" onclick="$('#fileupload1').click()" type="button">
+                            Add
+                        </button>
+                    </span>
+                    <input type="text" class="form-control border-radius-none input-sm" required="required" data-ng-model="message.text" placeholder="Type Message Here" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary btn-sm" id="btn-chat" data-ng-click="save(chatForm.$valid);" type="submit">
+                            Send
+                        </button>
+                    </span>
+                </div>
+                <div class="image-review">
+                    <img data-ng-src="{{image.url}}" data-ng-repeat="image in message.images" width="50" class="img-responsive custom-preview" />
+                </div>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+    </div>
+</div>
