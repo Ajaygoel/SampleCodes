@@ -45,6 +45,9 @@
     <Compile Include="DTO\Delay.cs" />
     <Compile Include="DTO\Message.cs" />
     <Compile Include="DTO\Slot.cs" />
+    <Compile Include="DTO\Truck.cs" />
+    <Compile Include="DTO\TruckBooking.cs" />
+    <Compile Include="DTO\TruckBookingRequest.cs" />
     <Compile Include="DTO\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

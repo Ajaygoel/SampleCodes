@@ -1,0 +1,111 @@
+﻿<section class="truck-booking" ng-controller="TruckBookingsCtrl">
+    <div class="page-header">
+        <h1>Truck Booking System</h1>
+        <p class="lead">
+            Reserve independent trucks without tying them to specific containers or drivers.
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-7">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Available Trucks</h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Truck</th>
+                                <th>Plate</th>
+                                <th>Capacity (tons)</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="truck in trucks">
+                                <td>{{truck.Model}}</td>
+                                <td>{{truck.PlateNumber}}</td>
+                                <td>{{truck.CapacityTons | number:1}}</td>
+                                <td>
+                                    <span class="label" ng-class="truck.Status === 'Available' ? 'label-success' : 'label-warning'">
+                                        {{truck.Status}}
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Create a Booking</h3>
+                </div>
+                <div class="panel-body">
+                    <form name="truckBookingForm" ng-submit="createBooking()">
+                        <div class="form-group">
+                            <label for="truckSelect">Truck</label>
+                            <select id="truckSelect" class="form-control" ng-model="booking.TruckId" ng-options="truck.Id as (truck.Model + ' (' + truck.PlateNumber + ')') for truck in trucks" required>
+                                <option value="">Select a truck</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="customerName">Customer name</label>
+                            <input id="customerName" class="form-control" type="text" ng-model="booking.CustomerName" placeholder="e.g. Acme Distribution" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="pickupLocation">Pickup location</label>
+                            <input id="pickupLocation" class="form-control" type="text" ng-model="booking.PickupLocation" placeholder="City, State" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="dropoffLocation">Drop-off location</label>
+                            <input id="dropoffLocation" class="form-control" type="text" ng-model="booking.DropoffLocation" placeholder="City, State" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="pickupDate">Pickup date</label>
+                            <input id="pickupDate" class="form-control" type="date" ng-model="booking.PickupDate" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Notes</label>
+                            <textarea id="notes" class="form-control" rows="3" ng-model="booking.Notes" placeholder="Special handling instructions"></textarea>
+                        </div>
+                        <button class="btn btn-success btn-block" type="submit" ng-disabled="truckBookingForm.$invalid">Confirm booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Recent Bookings</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Booking #</th>
+                        <th>Truck</th>
+                        <th>Customer</th>
+                        <th>Route</th>
+                        <th>Pickup</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="booking in bookings">
+                        <td>{{booking.Id}}</td>
+                        <td>{{truckLabel(booking.TruckId)}}</td>
+                        <td>{{booking.CustomerName}}</td>
+                        <td>{{booking.PickupLocation}} → {{booking.DropoffLocation}}</td>
+                        <td>{{booking.PickupDate | date:'mediumDate'}}</td>
+                        <td>{{booking.Status}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

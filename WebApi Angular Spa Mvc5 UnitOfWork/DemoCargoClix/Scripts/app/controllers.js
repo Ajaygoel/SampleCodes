@@ -111,6 +111,76 @@ cargoclixAppControllers.controller('BookingDetailsSendMessageCtrl', [
     }
 ]);
 
+// Path: /truck-bookings
+cargoclixAppControllers.controller('TruckBookingsCtrl', [
+    '$scope', '$http', function ($scope, $http) {
+        $scope.$root.title = 'Truck Booking System';
+        $scope.trucks = [];
+        $scope.bookings = [];
+        $scope.booking = {
+            TruckId: '',
+            CustomerName: '',
+            PickupLocation: '',
+            DropoffLocation: '',
+            PickupDate: '',
+            Notes: ''
+        };
+
+        $scope.loadData = function () {
+            $http.get('/api/TruckBookings/GetTrucks').
+                success(function (data) {
+                    $scope.trucks = data || [];
+                }).
+                error(function () {
+                    toastr.error("Unable to load trucks");
+                });
+
+            $http.get('/api/TruckBookings/GetBookings').
+                success(function (data) {
+                    $scope.bookings = data || [];
+                }).
+                error(function () {
+                    toastr.error("Unable to load bookings");
+                });
+        };
+
+        $scope.truckLabel = function (truckId) {
+            var match = null;
+            angular.forEach($scope.trucks, function (truck) {
+                if (truck.Id === truckId) {
+                    match = truck;
+                }
+            });
+
+            return match ? match.Model + ' (' + match.PlateNumber + ')' : 'Truck #' + truckId;
+        };
+
+        $scope.createBooking = function () {
+            $http.post('/api/TruckBookings/CreateBooking', $scope.booking).
+                success(function (data) {
+                    if (data) {
+                        toastr.success("Truck booking confirmed");
+                        $scope.booking = {
+                            TruckId: '',
+                            CustomerName: '',
+                            PickupLocation: '',
+                            DropoffLocation: '',
+                            PickupDate: '',
+                            Notes: ''
+                        };
+                        $scope.loadData();
+                    } else {
+                        toastr.error("Unable to create booking");
+                    }
+                }).
+                error(function () {
+                    toastr.error("Unable to create booking");
+                });
+        };
+
+        $scope.loadData();
+    }
+]);
 
 // Path: /login
 cargoclixAppControllers.controller('LoginCtrl', [
