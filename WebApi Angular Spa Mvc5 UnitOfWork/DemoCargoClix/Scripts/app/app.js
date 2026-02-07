@@ -31,6 +31,10 @@ cargoclixApp.config(['$routeProvider',
             templateUrl: '/views/EnterMessage.cshtml',
             controller: 'BookingDetailsSendMessageCtrl'
         }).
+        when('/truck-bookings', {
+            templateUrl: '/views/TruckBookings.cshtml',
+            controller: 'TruckBookingsCtrl'
+        }).
         otherwise({
             templateUrl: '/views/404.cshtml',
         });

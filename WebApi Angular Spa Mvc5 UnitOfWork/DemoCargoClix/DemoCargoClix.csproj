@@ -1066,6 +1066,7 @@
     <Content Include="Views\_Layout.cshtml" />
     <Content Include="Views\_PageStart.cshtml" />
     <Content Include="Views\Bookings.cshtml" />
+    <Content Include="Views\TruckBookings.cshtml" />
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\Index.cshtml" />
     <Content Include="Views\OnWay.cshtml" />
@@ -1086,6 +1087,7 @@
     <Compile Include="common\BaseApiController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BookingsController.cs" />
+    <Compile Include="Controllers\TruckBookingsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
